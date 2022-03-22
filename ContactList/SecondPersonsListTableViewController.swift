@@ -1,36 +1,48 @@
 //
-//  PersonsListViewController.swift
+//  SecondPersonalListTableViewController.swift
 //  ContactList
 //
-//  Created by Герман Ставицкий on 22.03.2022.
+//  Created by Герман Ставицкий on 23.03.2022.
 //
 
 import UIKit
 
-class PersonsListViewController: UITableViewController {
-    
-    private let personList = Person.getContactList()
+class SecondPersonsListTableViewController: UITableViewController {
 
+    private let secondPersonList = Person.getContactList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    // MARK: - Table view data source 
+    // MARK: - Table view data source
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        secondPersonList.count
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        personList.count
+        2
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let person = secondPersonList[0]
+        return person.fullName
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)
-        let person = personList[indexPath.row] 
+        let cell = tableView.dequeueReusableCell(withIdentifier: "secondContact", for: indexPath)
+        let person = secondPersonList[0]
         var content = cell.defaultContentConfiguration()
         
-        content.text = person.fullName
+        content.text = person.phone
+        content.image = UIImage(systemName: "person.circle")
         
         cell.contentConfiguration = content
         
         return cell
     }
+
 
     /*
     // Override to support conditional editing of the table view.

@@ -12,8 +12,10 @@
 		DECD730B27E9D89600547C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD730927E9D89600547C62 /* Main.storyboard */; };
 		DECD730D27E9D89900547C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DECD730C27E9D89900547C62 /* Assets.xcassets */; };
 		DECD731027E9D89900547C62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DECD730E27E9D89900547C62 /* LaunchScreen.storyboard */; };
-		DECD731A27EA12B400547C62 /* PersonsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731927EA12B400547C62 /* PersonsListViewController.swift */; };
+		DECD731A27EA12B400547C62 /* FirstPersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731927EA12B400547C62 /* FirstPersonsListTableViewController.swift */; };
 		DECD731E27EA15AE00547C62 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731D27EA15AE00547C62 /* Person.swift */; };
+		DECD732027EA631800547C62 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */; };
+		DECD732227EA724100547C62 /* SecondPersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		DECD730C27E9D89900547C62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DECD730F27E9D89900547C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DECD731127E9D89900547C62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DECD731927EA12B400547C62 /* PersonsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonsListViewController.swift; sourceTree = "<group>"; };
+		DECD731927EA12B400547C62 /* FirstPersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPersonsListTableViewController.swift; sourceTree = "<group>"; };
 		DECD731D27EA15AE00547C62 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
+		DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPersonsListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,9 @@
 				DECD730C27E9D89900547C62 /* Assets.xcassets */,
 				DECD730E27E9D89900547C62 /* LaunchScreen.storyboard */,
 				DECD731127E9D89900547C62 /* Info.plist */,
-				DECD731927EA12B400547C62 /* PersonsListViewController.swift */,
+				DECD731927EA12B400547C62 /* FirstPersonsListTableViewController.swift */,
+				DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */,
+				DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */,
 				DECD731D27EA15AE00547C62 /* Person.swift */,
 			);
 			path = ContactList;
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DECD732027EA631800547C62 /* ContactDetailsViewController.swift in Sources */,
+				DECD732227EA724100547C62 /* SecondPersonsListTableViewController.swift in Sources */,
 				DECD730427E9D89600547C62 /* AppDelegate.swift in Sources */,
-				DECD731A27EA12B400547C62 /* PersonsListViewController.swift in Sources */,
+				DECD731A27EA12B400547C62 /* FirstPersonsListTableViewController.swift in Sources */,
 				DECD731E27EA15AE00547C62 /* Person.swift in Sources */,
 				DECD730627E9D89600547C62 /* SceneDelegate.swift in Sources */,
 			);
