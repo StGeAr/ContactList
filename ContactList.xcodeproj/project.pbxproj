@@ -16,6 +16,7 @@
 		DECD731E27EA15AE00547C62 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731D27EA15AE00547C62 /* Person.swift */; };
 		DECD732027EA631800547C62 /* ContactDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */; };
 		DECD732227EA724100547C62 /* SecondPersonsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */; };
+		DECD732427EB157C00547C62 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECD732327EB157C00547C62 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		DECD731D27EA15AE00547C62 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsViewController.swift; sourceTree = "<group>"; };
 		DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPersonsListTableViewController.swift; sourceTree = "<group>"; };
+		DECD732327EB157C00547C62 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				DECD730C27E9D89900547C62 /* Assets.xcassets */,
 				DECD730E27E9D89900547C62 /* LaunchScreen.storyboard */,
 				DECD731127E9D89900547C62 /* Info.plist */,
+				DECD732327EB157C00547C62 /* TabBarController.swift */,
 				DECD731927EA12B400547C62 /* FirstPersonsListTableViewController.swift */,
 				DECD732127EA724100547C62 /* SecondPersonsListTableViewController.swift */,
 				DECD731F27EA631800547C62 /* ContactDetailsViewController.swift */,
@@ -151,6 +154,7 @@
 				DECD732227EA724100547C62 /* SecondPersonsListTableViewController.swift in Sources */,
 				DECD730427E9D89600547C62 /* AppDelegate.swift in Sources */,
 				DECD731A27EA12B400547C62 /* FirstPersonsListTableViewController.swift in Sources */,
+				DECD732427EB157C00547C62 /* TabBarController.swift in Sources */,
 				DECD731E27EA15AE00547C62 /* Person.swift in Sources */,
 				DECD730627E9D89600547C62 /* SceneDelegate.swift in Sources */,
 			);

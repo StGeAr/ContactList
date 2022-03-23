@@ -12,7 +12,7 @@
         <scene sceneID="4Ys-xd-3wq">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLr-S1-sMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController id="URR-Mx-OcM" sceneMemberID="viewController">
+                <tabBarController id="URR-Mx-OcM" customClass="TabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tiE-pV-ssI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -120,7 +120,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ykO-4T-Zrc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="1624"/>
+            <point key="canvasLocation" x="264" y="1624"/>
         </scene>
         <!--Contacts-->
         <scene sceneID="Auh-9k-wXH">
@@ -137,7 +137,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E5W-dX-o4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="338" y="849"/>
+            <point key="canvasLocation" x="266" y="849"/>
         </scene>
         <!--Contact Details View Controller-->
         <scene sceneID="ksG-Nm-AEo">

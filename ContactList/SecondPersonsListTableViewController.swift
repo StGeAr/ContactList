@@ -9,16 +9,15 @@ import UIKit
 
 class SecondPersonsListTableViewController: UITableViewController {
 
-    private let personList = Person.getContactList()
+    var contactList: [Person]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        personList.count
+        contactList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,14 +25,14 @@ class SecondPersonsListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        personList[section].fullName
+        contactList[section].fullName
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondContact", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
-        content.text = personList[indexPath.row].phone
+        content.text = contactList[indexPath.row].phone
         content.image = UIImage(systemName: "phone.fill")
         
         cell.contentConfiguration = content
@@ -74,16 +73,6 @@ class SecondPersonsListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
     */
 
