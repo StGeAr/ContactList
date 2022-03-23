@@ -25,3 +25,50 @@ struct Person {
         ]
     }
 }
+
+class DataManager {
+    let names = [
+        "John",
+        "Sharon",
+        "Aaron",
+        "Steven",
+        "Nicola",
+        "Ted",
+        "Bruce",
+        "Carl",
+        "Allan"
+    ]
+    let surnames = [
+        "Murphy",
+        "Jenkins",
+        "Williams",
+        "Black",
+        "Robertson",
+        "Butler",
+        "Isaacson",
+        "Smith",
+        "Pennyworth"
+    ]
+    let phones = [
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999),
+        Int.random(in: 89000000000...89999999999)
+    ]
+    let emails = [
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru",
+        "\(Int.random(in: 100...999))@mail.ru"
+    ]
+}
