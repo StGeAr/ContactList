@@ -9,18 +9,19 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    private let contactList = Person.getContactList()
+    private let contactList = Person.getContactList(from: contacts)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let viewControllers = self.viewControllers else { return }
         
         viewControllers.forEach {
-            guard let navigationVC = $0 as? UINavigationController else { return }
-            if let firstPersonsListVC = navigationVC.topViewController as? FirstPersonsListTableViewController {
-                firstPersonsListVC.contactList = contactList
-            } else if let firstPersonsListVC = navigationVC.topViewController as? SecondPersonsListTableViewController {
-                firstPersonsListVC.contactList = contactList
+            if let navigationVC = $0 as? UINavigationController {
+                if let firstPersonsListVC = navigationVC.topViewController as? FirstPersonsListTableViewController {
+                    firstPersonsListVC.contactList = contactList
+                } else if let firstPersonsListVC = navigationVC.topViewController as? SecondPersonsListTableViewController {
+                    firstPersonsListVC.contactList = contactList
+                }
             }
         }
     }

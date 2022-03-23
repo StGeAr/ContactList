@@ -15,16 +15,51 @@ struct Person {
         String("\(name) \(surname)")
     }
     
-    static func getContactList() -> [Person] {
+    static func getContactList(from contacts: DataManager) -> [Person] {
+        
         [
-            Person(name: "German", surname: "Stavitskiy", phone: "8040", email: "german@mail.ru"),
-            Person(name: "Julia", surname: "Markova", phone: "7009", email: "julia@mail.ru"),
-            Person(name: "Elena", surname: "Topal", phone: "2003", email: "elena@mail.ru"), 
-            Person(name: "Vladimir", surname: "Bolshakov", phone: "0605", email: "vladimir@mail.ru")
-
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            ),
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            ),
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            ),
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            ),
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            ),
+            Person (
+                name: contacts.names.randomElement()!,
+                surname: contacts.surnames.randomElement()!,
+                phone: contacts.phones.randomElement()!,
+                email: contacts.emails.randomElement()!
+            )
         ]
+
     }
 }
+
+let contacts = DataManager()
 
 class DataManager {
     let names = [
@@ -50,15 +85,15 @@ class DataManager {
         "Pennyworth"
     ]
     let phones = [
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999),
-        Int.random(in: 89000000000...89999999999)
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))",
+        "\(Int.random(in: 89000000000...89999999999))"
     ]
     let emails = [
         "\(Int.random(in: 100...999))@mail.ru",
@@ -72,3 +107,4 @@ class DataManager {
         "\(Int.random(in: 100...999))@mail.ru"
     ]
 }
+
