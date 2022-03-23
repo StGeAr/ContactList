@@ -11,10 +11,6 @@ class FirstPersonsListTableViewController: UITableViewController {
     
     var contactList: [Person]!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Table view data source 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         contactList.count
