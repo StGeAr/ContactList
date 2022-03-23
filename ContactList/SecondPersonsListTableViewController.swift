@@ -9,7 +9,7 @@ import UIKit
 
 class SecondPersonsListTableViewController: UITableViewController {
 
-    private let secondPersonList = Person.getContactList()
+    private let personList = Person.getContactList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class SecondPersonsListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        secondPersonList.count
+        personList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,17 +26,15 @@ class SecondPersonsListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let person = secondPersonList[0]
-        return person.fullName
+        personList[section].fullName
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondContact", for: indexPath)
-        let person = secondPersonList[0]
         var content = cell.defaultContentConfiguration()
         
-        content.text = person.phone
-        content.image = UIImage(systemName: "person.circle")
+        content.text = personList[indexPath.row].phone
+        content.image = UIImage(systemName: "phone.fill")
         
         cell.contentConfiguration = content
         
