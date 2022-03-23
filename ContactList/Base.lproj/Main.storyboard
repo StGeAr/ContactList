@@ -11,7 +11,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="4Ys-xd-3wq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mLr-S1-sMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController id="URR-Mx-OcM" customClass="TabBarController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tiE-pV-ssI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -23,6 +22,7 @@
                         <segue destination="XD0-fq-d5i" kind="relationship" relationship="viewControllers" id="Cmm-oP-DgB"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLr-S1-sMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-249" y="105"/>
         </scene>

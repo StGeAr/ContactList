@@ -32,8 +32,13 @@ class SecondPersonsListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondContact", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
-        content.text = contactList[indexPath.row].phone
-        content.image = UIImage(systemName: "phone.fill")
+        if indexPath.row == 0 {
+            content.text = contactList[indexPath.section].phone
+            content.image = UIImage(systemName: "phone.fill")
+        } else {
+            content.text = contactList[indexPath.section].email
+            content.image = UIImage(systemName: "tray.fill")
+        }
         
         cell.contentConfiguration = content
         
